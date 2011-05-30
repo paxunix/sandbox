@@ -1,0 +1,113 @@
+SandBox v1.01 Dox
+
+Standard Disclaimer
+
+The author of this software and documentation (term used loosely) cannot be 
+held responsible in any way for any damages, lost revenue, etc. that result 
+from the use or misuse of this software.
+
+Minimum requirements:
+- Windows 3.1
+- dunno how much memory is _necessary_.  Tested it on a 4MB box without 
+  running out of memory on files like Midgaard and New Thalos, so there 
+  shouldn't be any problems.
+
+It's designed expressly for the purpose of creating/editing ROM2 areas 
+(I know, I know, MZF will do that too, but I haven't seen it and don't 
+care...different strokes blah blah blah).  Anyway, SandBox is really quite 
+simple to use.  If you've designed a ROM2 area before, all of the options 
+will be self-explanatory.  If not, well, there'll be a bit of a learning 
+curve then, and I'm not about to explain everything that goes into making 
+an area.  This is just a tool, not some tutorial fluff :)
+
+Here are some things you might have to consider, though:
+- when you Delete anything from the area file, it's permanent:  there is no 
+  undo option so don't whine...you've been warned.  And there's no delete
+  confirmation either.
+- I know there are print options on the file menu.  They're grayed out since 
+  they are intended to print the map of the current area (an unimplemented 
+  feature that will, sadly, probably remain that way).
+- that big white space behind the Socials and Help windows is where the map 
+  would go.  However, I haven't the time to put that feature in.  And if you 
+  think about it, generating the map (and doing it well no matter how the 
+  area is layed out) is a fairly difficult thing to nail down a neat 
+  algorithm for.
+- for the corpse, map, and portal types, a separate dialog doesn't exist.
+  Instead:
+	- for corpses, v1 is the container state for the corpse:
+		A = closeable
+		B = pick-proof
+		C = closed
+		D = locked
+	- for maps, if v0 is non-zero, the map is saved with the character.
+	- since portals aren't actually implemented in the base code, the
+	  values may differ between MUDs
+- since SandBox carts around a fair whack o' data, be patient if you're 
+  running on a "slow" box and it seems the prog locks it up (particularly on 
+  entering or exiting the program)...it has to allocate and deallocate a fair 
+  bit o' memory, depending on the size of the area you are editing.
+- about the data values in list/combo boxes and such:
+	- all of the volatile stuff (spell slot numbers/names, materials, 
+	  directions, etc.) is read in from the "values.dat" file
+	- the first entry in the Materials section _must_ be "unknown"
+	- there must be an entry
+		none = ""
+	  in the SpecFunc category.
+	- do not change the order of the entries in the Directions section
+	- you cannot define your own category headings
+	- all entries are of the form:
+		<name> = <value>
+	  Where <name> is what appears in the list/combo box, and <value> is what
+	  goes into the file.  Note that if <value> is "", <name> is used instead.
+	  <name> can have embedded white-space (trailing white space is stripped).
+	  <value> is anything to the end of the line.  <value> must be unique
+	  within that category (if equivalent values are listed within a
+	  category, results are unpredictable).
+- you can't edit an area file with a non-area shopkeeper (i.e. any shops in 
+  the area must be run by mobiles from that area).
+- of course there _are_ limits on the number of rooms, mobs, etc. that you 
+  can have in an area, but that's directly related to how much memory you 
+  have available
+- SandBox continues to parse in the event of a non-fatal error.  When parsing
+  an area file, errors/successes are logged to the "sandbox.log" file in the
+  current directory (and it's overwritten with each new area you edit, as well as
+  when saving the area, so watch out).
+- in the event of duplicate vnums, the duplicated object is thrown out and
+  the event is logged.
+- non-area vnums are logged (this does not imply an error, since it is
+  possible, for example, to have non-area object resets), mostly to make
+  sure you meant to do what the server interprets.
+- only one area is supported per file
+- old-style objects, mobs and rooms can be read and written.  It is not
+  possible to create old-style objects, mobs or rooms, nor is there a
+  function to magically turn an old-style thing into a new-style thing.
+- for the Socials, here are the meanings of the "$*" sequences:
+	$n = name of the character doing the social
+	$N = name of the social's victim
+	$e = 'he', 'she', or 'it', depending on the sex of character
+	$E = 'he', 'she', or 'it', depending on the sex of victim
+	$m = 'him', 'her', or 'it', depending on the sex of character
+	$M = 'him', 'her', or 'it', depending on the sex of victim
+	$s = 'his', 'her', or 'its', depending on the sex of character
+	$S = 'his', 'her', or 'its', depending on the sex of victim
+
+I can't guarantee there are no bugs, but it has been tested on a number of 
+different area files without any problems.  As it stands, I can't foresee a 
+version 2 coming out very soon (if ever), since I have other things to do 
+besides enhance this software:  I will fix bugs, but adding new features is
+less likely.  Bug reports are welcome, as are questions and constructive 
+comments/criticism.  Email address is under the About option on the main 
+menu.
+
+I think that about covers it.
+
+Oh ya, about the "wolf.dll" file.  It's a collection of C++ objects that I 
+wrote so I'd have some sort of framework for Windoze apps (too cheap to buy 
+Borland's OWL, I guess).  And as for the SandBox source...it's all C++ and at 
+the moment I am not considering releasing it.  If I decide that no further 
+versions are forthcoming, then _maybe_ I'll release the source.  Don't hound
+me for it!
+
+Hopefully, this little bit o' software will get people busy at cranking out 
+new, interesting areas, since the standard dist ones are getting a little 
+old :)  

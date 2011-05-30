@@ -1,0 +1,637 @@
+[ Action ]
+IS_NPC = A
+SENTINEL = B
+SCAVENGER = C
+AGGRESSIVE = F
+STAY_AREA = G
+WIMPY = H
+PET = I
+TRAIN = J
+PRACTICE = K
+UNDEAD = O
+CLERIC = Q
+MAGE = R
+THIEF = S
+WARRIOR = T
+NOALIGN = U
+NOPURGE = V
+IS_HEALER = aa
+GAIN = bb
+UPDATE_ALWAYS = cc
+
+[ Affby ]
+BLIND = A
+INVISIBLE = B
+DETECT_EVIL = C
+DETECT_INVIS = D
+DETECT_MAGIC = E
+DETECT_HIDDEN = F
+HOLD = G
+SANCTUARY = H
+FAERIE_FIRE = I
+INFRARED = J
+CURSE = K
+FLAMING = L
+POISON = M
+PROTECT = N
+PARALYSIS = O
+SNEAK = P
+HIDE = Q
+SLEEP = R
+CHARM = S
+FLYING = T
+PASS_DOOR = U
+HASTE = V
+CALM = W
+PLAGUE = X
+WEAKEN = Y
+DARK_VISION = Z
+BERSERK = aa
+SWIM = bb
+REGENERATION = cc
+
+[ SpecFunc ]
+none = ""
+spec_breath_any = ""
+spec_breath_acid = ""
+spec_breath_fire = ""
+spec_breath_frost = ""
+spec_breath_gas = ""
+spec_breath_lightning = ""
+spec_cast_adept = ""
+spec_cast_cleric = ""
+spec_cast_judge = ""
+spec_cast_mage = ""
+spec_cast_undead = ""
+spec_executioner = ""
+spec_fido = ""
+spec_guard = ""
+spec_janitor = ""
+spec_mayor = ""
+spec_poison = ""
+spec_thief = ""
+
+[ ObjFlags ]
+GLOW = A
+HUM = B
+DARK = C
+LOCK = D
+EVIL = E
+INVIS = F
+MAGIC = G
+NODROP = H
+BLESS = I
+ANTI_GOOD = J
+ANTI_EVIL = K
+ANTI_NEUTRAL = L
+NOREMOVE = M
+INVENTORY = N
+NOPURGE = O
+ROT_DEATH = P
+VIS_DEATH = Q
+
+[ ObjWear ]
+TAKE = A
+WEAR_FINGER = B
+WEAR_NECK = C
+WEAR_BODY = D
+WEAR_HEAD = E
+WEAR_LEGS = F
+WEAR_FEET = G
+WEAR_HANDS = H
+WEAR_ARMS = I
+WEAR_SHIELD = J
+WEAR_ABOUT = K
+WEAR_WAIST = L
+WEAR_WRIST = M
+WIELD = N
+HOLD = O
+TWO_HANDS = P
+
+[ Offensive ]
+AREA_ATTACK = A
+BACKSTAB = B
+BASH = C
+BERSERK = D
+DISARM = E
+DODGE = F
+FADE = G
+FAST = H
+KICK = I
+KICK_DIRT = J
+PARRY = K
+RESCUE = L
+TAIL = M
+TRIP = N
+CRUSH = O
+ASSIST_ALL = P
+ASSIST_ALIGN = Q
+ASSIST_RACE = R
+ASSIST_PLAYERS = S
+ASSIST_GUARD = T
+ASSIST_VNUM = U
+
+[ Immune ]
+SUMMON = A
+CHARM = B
+MAGIC = C
+WEAPON = D
+BASH = E
+PIERCE = F
+SLASH = G
+FIRE = H
+COLD = I
+LIGHTNING = J
+ACID = K
+POISON = L
+NEGATIVE = M
+HOLY = N
+ENERGY = O
+MENTAL = P
+DISEASE = Q
+DROWNING = R
+LIGHT = S
+
+[ Resist ]
+CHARM = B
+MAGIC = C
+WEAPON = D
+BASH = E
+PIERCE = F
+SLASH = G
+FIRE = H
+COLD = I
+LIGHTNING = J
+ACID = K
+POISON = L
+NEGATIVE = M
+HOLY = N
+ENERGY = O
+MENTAL = P
+DISEASE = Q
+DROWNING = R
+LIGHT = S
+
+[ Vuln ]
+MAGIC = C
+WEAPON = D
+BASH = E
+PIERCE = F
+SLASH = G
+FIRE = H
+COLD = I
+LIGHTNING = J
+ACID = K
+POISON = L
+NEGATIVE = M
+HOLY = N
+ENERGY = O
+MENTAL = P
+DISEASE = Q
+DROWNING = R
+LIGHT = S
+WOOD = X
+SILVER = Y
+IRON = Z
+
+[ Forms ]
+EDIBLE = A
+POISON = B
+MAGICAL = C
+INSTANT_DECAY = D
+OTHER = E
+ANIMAL = G
+SENTIENT = H
+UNDEAD = I
+CONSTRUCT = J
+MIST = K
+INTANGIBLE = L
+BIPED = M
+CENTAUR = N
+INSECT = O
+SPIDER = P
+CRUSTACEAN = Q
+WORM = R
+BLOB = S
+MAMMAL = V
+BIRD = W
+REPTILE = X
+SNAKE = Y
+DRAGON = Z
+AMPHIBIAN = aa
+FISH = bb
+COLD_BLOOD = cc    
+
+[ Parts ]
+HEAD = A
+ARMS = B
+LEGS = C
+HEART = D
+BRAINS = E
+GUTS = F
+HANDS = G
+FEET = H
+FINGERS = I
+EAR = J
+EYE = K
+LONG_TONGUE = L
+EYESTALKS = M
+TENTACLES = N
+FINS = O
+WINGS = P
+TAIL = Q
+CLAWS = U
+FANGS = V
+HORNS = W
+SCALES = X
+TUSKS = Y
+
+[ DamType ]
+hit = 0
+slice = 1
+stab = 2
+slash = 3
+whip = 4
+claw = 5
+blast = 6
+pound = 7
+crush = 8
+grep = 9
+bite = 10
+pierce = 11
+suction = 12
+beating = 13
+digestion = 14
+charge = 15
+slap = 16
+punch = 17
+wrath = 18
+magic = 19
+divine power = 20
+cleave = 21
+scratch = 22
+peck = 23
+peck = 24
+chop = 25
+sting = 26
+smash = 27
+shocking bite = 28
+flaming bite = 29
+freezing bite = 30
+acidic bite = 31
+chomp = 32
+
+[ Sex ]
+NEUTRAL = 0
+MALE = 1
+FEMALE = 2
+RANDOM = 3
+
+[ Size ]
+TINY = T
+SMALL = S
+MEDIUM = M
+LARGE = L
+HUGE = H
+GIANT = G
+
+[ Material ]
+unknown = ""
+cloth = ""
+leather = ""
+pill = ""
+paper = ""
+vellum = ""
+glass = ""
+wood = ""
+steel = ""
+bronze = ""
+brass = ""
+iron = ""
+gold = ""
+silver = ""
+adamantite = ""
+stone = ""
+energy = ""
+water = ""
+crystal = ""
+clay = ""
+china = ""
+ivory = ""
+copper = ""
+diamond = ""
+mithril = ""
+fur = ""
+parchment = ""
+tin = ""
+ice = ""
+
+[ Adjustments ]
+NONE = 0
+STR = 1
+DEX = 2
+INT = 3
+WIS = 4
+CON = 5
+SEX = 6
+CLASS = 7
+LEVEL = 8
+AGE = 9
+HEIGHT = 10
+WEIGHT = 11
+MANA = 12
+HIT = 13
+MOVE = 14
+GOLD = 15
+EXP = 16
+AC = 17
+HITROLL = 18
+DAMROLL = 19
+SAVING_PARA = 20
+SAVING_ROD = 21
+SAVING_PETRI = 22
+SAVING_BREATH = 23
+SAVING_SPELL = 24
+
+[ Condition ]
+Perfect = P
+Good = G
+Average = A
+Worn = W
+Damaged = D
+Ruined = R
+
+[ Directions ]
+NORTH = 0
+EAST = 1
+SOUTH = 2
+WEST = 3
+UP = 4
+DOWN =5
+
+[ RoomFlags ]
+DARK = A
+NO_MOB = C
+INDOORS = D
+PRIVATE = J
+SAFE = K
+SOLITARY = L
+PET_SHOP = M
+NO_RECALL = N
+IMP_ONLY = O
+GODS_ONLY = P
+HEROES_ONLY = Q
+NEWBIES_ONLY = R
+LAW = S
+
+[ Terrain ]
+INSIDE = 0
+CITY = 1
+FIELD = 2
+FOREST = 3
+HILLS = 4
+MOUNTAIN = 5
+WATER_SWIM = 6
+WATER_NOSWIM = 7
+UNUSED = 8
+AIR = 9
+DESERT = 10
+MAX = 11
+
+[ ObjType ]
+LIGHT = 1
+SCROLL = 2
+WAND = 3
+STAFF = 4
+WEAPON = 5
+TREASURE = 8
+ARMOR = 9
+POTION = 10
+CLOTHING = 11
+FURNITURE = 12
+TRASH = 13
+CONTAINER = 15
+DRINK_CON = 17
+KEY = 18
+FOOD = 19
+MONEY = 20
+BOAT = 22
+CORPSE_NPC = 23
+CORPSE_PC = 24
+FOUNTAIN = 25
+PILL = 26
+PROTECT = 27
+MAP = 28
+PORTAL = 29
+
+[ Pos ]
+SLEEPING = 4
+RESTING = 5
+SITTING = 6
+STANDING = 8
+
+[ Race ]
+human = ""
+elf = ""
+dwarf = ""
+giant = ""
+drow = ""
+power = ""
+bat = ""
+bear = ""
+cat = ""
+centipede = ""
+dog = ""
+doll = ""
+fido = ""
+fox = ""
+goblin = ""
+hobgoblin = ""
+kobold = ""
+lizard = ""
+modron = ""
+orc = ""
+pig = ""
+rabbit = ""
+school monster = ""
+snake = ""
+song bird = ""
+troll = ""
+water fowl = ""
+wolf = ""
+wyvern = ""
+
+[ DoorState ]
+Open = 0
+Closed and unlocked = 1
+Closed and locked = 2
+
+[ DoorType ]
+Normal door = 1
+Closed = 2
+Locked = 4
+Pick-proof = 32
+
+[ WeaponClass ]
+EXOTIC = 0
+SWORD = 1
+DAGGER = 2
+SPEAR = 3
+MACE = 4
+AXE = 5
+FLAIL = 6
+WHIP = 7
+POLEARM = 8
+
+[ WeaponType ]
+FLAMING = A
+FROST = B
+VAMPIRIC = C
+SHARP = D
+VORPAL = E
+TWO_HANDS = F
+
+[ ContFlags ]
+CLOSEABLE = A
+PICKPROOF = B
+CLOSED = C
+LOCKED = D
+
+[ Liquids ]
+water = 0
+beer = 1
+wine = 2
+ale = 3
+dark ale = 4
+whiskey = 5
+lemonade = 6
+firebreather = 7
+local specialty = 8
+slime mold juice = 9
+milk = 10
+tea = 11
+coffee = 12
+blood = 13
+salt water = 14
+cola = 15
+
+[ Spells ]
+armor = 1
+teleport = 2
+bless = 3
+blindness = 4
+burning hands = 5
+call lightning = 6
+charm person = 7
+chill touch = 8
+colour spray = 10
+control weather = 11
+create food = 12
+create water = 13
+cure blindness = 14
+cure critical = 15
+cure light = 16
+curse = 17
+detect evil = 18
+detect invis = 19
+detect magic = 20
+detect poison = 21
+dispel evil = 22
+earthquake = 23
+enchant weapon = 24
+energy drain = 25
+fireball = 26
+harm = 27
+heal = 28
+invis = 29
+lightning bolt = 30
+locate object = 31
+magic missile = 32
+poison = 33
+protection evil = 34
+remove curse = 35
+sanctuary = 36
+sleep = 38
+giant strength = 39
+summon = 40
+ventriloquate = 41
+word of recall = 42
+cure poison = 43
+detect hidden = 44
+shocking grasp = 53
+identify = 54
+fly = 56
+continual light = 57
+know alignment = 58
+dispel magic = 59
+cure serious = 61
+cause light = 62
+cause critical = 63
+cause serious = 64
+flamestrike = 65
+stone skin = 66
+shield = 67
+weaken = 68
+mass invis = 69
+acid blast = 70
+faerie fire = 72
+faerie fog = 73
+pass door = 74
+infravision = 77
+create spring = 80
+refresh = 81
+change sex = 82
+gate = 83
+acid breath = 200
+fire breath = 201
+frost breath = 202
+gas breath = 203
+lightning breath = 204
+general purpose = 401
+high explosive = 402
+chain lightning = 500
+cure disease = 501
+haste = 502
+plague = 503
+frenzy = 504
+demonfire = 505
+holy word = 506
+cancellation = 507
+mass healing = 508
+calm = 509
+enchant armor = 510
+
+[ PortalTypes ]
+No_cursed, no_recall = G
+Random exit = H
+Exit in v3 = I
+Normal = J
+Go with = K
+
+[ E_Wear ]
+NONE = -1
+LIGHT = 0
+FINGER_L = 1
+FINGER_R = 2
+NECK_1 = 3
+NECK_2 = 4
+BODY = 5
+HEAD = 6
+LEGS = 7
+FEET = 8
+HANDS = 9
+ARMS = 10
+SHIELD = 11
+ABOUT = 12
+WAIST = 13
+WRIST_L = 14
+WRIST_R = 15
+WIELD = 16
+HOLD = 17
+
+[ ExitTypes ]
+Normal door = A
+Closed = B
+Locked = C
+Pick-proof = F
+

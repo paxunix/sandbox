@@ -1,0 +1,16 @@
+MUD Zone Editor
+
+In 1994-1995, I often played a MUD called Eternal Twilight.  The implementor
+of Eternal Twilight and I became friends after a friend of mine and I had
+hacked into the game and given ourselves god-like powers.  Time passed and
+I offered to create a new starting zone, rather than the standard ROM one
+that the mud initially came with.
+
+I had written this program so I could create new zones for this MUD and now
+I had a perfect opportunity to try it out.
+
+This was my first (and last) usage of my WOLF library to build a Windows
+program.
+
+If you had an old enough Borland C++ compiler, you might still be able to
+build it.
